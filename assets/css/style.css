@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(158, 158, 158);
 }
 
 input:focus,
@@ -22,6 +22,18 @@ img{
 
 
 /* Boot css */
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-flex-end{
+    justify-content: flex-end;
+}
+
 .center{
     margin: 0 auto;
     max-width: 1280px;
@@ -121,7 +133,7 @@ section.top-header{
 
 ul.menu-top-header{
     display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 ul.menu-top-header li{
@@ -220,12 +232,43 @@ ul#dropdown-menu{
     font-size: 15px;
 }
 
+.basket-circle{
+    top: 13.5%;
+    right: 1%;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: black;
+    border-radius: 100%;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-circle p{
+    margin-right: 2px;
+    margin-bottom: 1px;
+    top: 50%;
+    left: 50%;
+}
 
 
-@media screen and (max-width: 1190px){
 
-    .search-container{
-        width: 60%;
+@media screen and (max-width: 1200px){
+    ul.menu-top-header li{
+        margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 768px){
+    header .top-header{
+        display: none;
+    }
+}
+
+
+
 
