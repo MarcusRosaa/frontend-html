@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>teste front-end</title>
 </head>
 <body>
@@ -38,17 +40,27 @@
                     <img src="assets/img/search.png" alt="search icon">
                 </button>
             </div><!-- search-containar-->
-            <div class="clear"></div>
-
             <div class="w-10 left"></div>
             <div class="w-10 left dropdown">
-                <span class="right"><p class="bold entrar">Entrar</p>
+                <span class="right header-span"><p class="mid entrar">Entrar</p>
                 <img src="assets/img/chevron-down.png"></span>
+
+                <ul id="dropdown-menu">
+                    <li><a href="#">Minha conta</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                    <li><a href="#">Lista de desejos</a></li>
+                </ul>
+
             </div>
-            <div class="w-10 ">
-                <img  class="right" src="assets/img/Path 1.png">
+            <div class="w-10 left">
+                <a href="#"><img  class="right" src="assets/img/Path 1.png"></a>
+                <div class="clear"></div>
+            </div>
             <div class="clear"></div>
         </section>
     </header>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/dropdown.js"></script>
 </body>
 </html>

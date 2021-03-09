@@ -5,6 +5,10 @@
     font-family: "Open Sans", Sans-Serif;
 }
 
+body{
+    background-color: rgb(231, 231, 231);
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -70,8 +74,19 @@ img{
     font-weight: 600;
 }
 
+.mid{
+    font-weight: 600;
+}
+
 
 /*-------------------*/
+
+header{
+    height: 130px;
+    background: #fff;
+}
+
+
 
 /* top-header */
 span{
@@ -85,6 +100,10 @@ section.top-header{
     background: #f1f1f1;
 }
 
+.top-header{
+   padding-bottom: 40px;
+}
+
 .top-header span img{
     margin-right: 5px;
     width: 16px;
@@ -93,6 +112,12 @@ section.top-header{
 .top-header > .center{
     padding-top: 8px;
 }
+
+.top-header .center{
+    display: flex;
+    align-items: center;
+}
+
 
 ul.menu-top-header{
     display: flex;
@@ -114,8 +139,7 @@ a{
 .main-header{
     display: flex;
     align-items: center;
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    margin-top: 17px;
 }
 
 .search-container{
@@ -142,6 +166,7 @@ input[type=search]:focus{
     border: 0;
     background: inherit;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 #btn-search img{
@@ -152,8 +177,55 @@ input[type=search]:focus{
     margin-right: 5px;
 }
 
-.dropdown{
-    cursor: pointer;
+.header-span img{
+    margin-top: 4px;
 }
 
+.dropdown{
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown span{
+    position: relative;
+}
+
+ul#dropdown-menu{
+    display: none;
+    list-style-type: none;
+    font-weight: 600;
+    width: 174px;
+    height: 154px;
+    padding-top: 18px;
+    background: #fff;
+    box-shadow: 0px 0px 6px #00000033;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -110px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+ul#dropdown-menu li{
+    margin-top: 15px;
+}
+
+ul#dropdown-menu li:nth-child(1){
+    font-weight: bold;
+}
+
+
+
+ul#dropdown-menu{
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 1190px){
+
+    .search-container{
+        width: 60%;
+    }
+}
 
