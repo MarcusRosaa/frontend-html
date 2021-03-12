@@ -1,0 +1,33 @@
+.basket-container{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
+}
+
+.basket-circle{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: black;
+    border-radius: 100%;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    vertical-align: top;
+    margin: 10px 10px 0px 0;
+
+}
+
+.basket-circle p{
+    margin-right: 2px;
+    margin-bottom: 1px;
+    top: 50%;
+    left: 50%;
+}
+
+.basket-mobile{display: none;}

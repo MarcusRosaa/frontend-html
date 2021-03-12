@@ -1,0 +1,70 @@
+.entrar span > img{
+    margin-bottom: 1px;
+}
+
+.entrar{
+    margin-right: 5px;
+}
+
+.header-span img{
+    margin-top: 4px;
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+}
+
+ul.dropdown-menu{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    font-weight: 600;
+    width: 174px;
+    height: 140px;
+    padding: 10px 0px  10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 6px #00000033;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1px 0px 0px -110px;
+}
+
+ul.dropdown-menu li{
+    margin-top: 15px;
+}
+
+ul.dropdown-menu li a:hover{
+    font-weight: bold;
+}
+
+ul.dropdown-menu{
+    font-size: 15px;
+}
+
+.dropdown-mobile{display: none;}
+
+.wrapper-mobile .dropdown.dropdown-mobile{
+    margin-right: unset;
+}
+
+.dropdown-mobile ul.dropdown-menu{
+    margin: 22px 0 0 -110px;
+}
+
+.dropdown{
+    margin-right: 90px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown .entrar span > img{
+    transform: rotate(180deg);
+}
+
+.dropdown:hover .entrar span > img{
+    transform: rotate(0);
+}
+

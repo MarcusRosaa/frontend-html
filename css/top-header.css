@@ -1,0 +1,69 @@
+/* top-header */
+section.top-header{
+    height: 35px;
+    background: #f1f1f1;
+}
+
+section.top-header .center{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.telefones{
+    display: flex;
+    align-items: center;
+}
+
+.telefones-mobile{display: none;}
+
+.telefones .tel-1, .telefones .tel-2{
+    min-width: 25%;
+}
+
+.telefones .tel-1 p, .telefones .tel-2 p{
+    display: flex;
+    align-items: center;
+}
+
+.tel-2 img{
+    margin-right: 5px;
+}
+
+.material-icons.help{display: none;cursor: pointer;}
+
+.telefones-mobile{
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0px 0px 6px #00000033;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 0px 0px -135px;
+}
+
+.telefones-mobile .tel-1, .telefones-mobile .tel-2{
+    padding: 5px 0;
+}
+
+.menu-top-header li a:hover{
+    color: rgb(173, 173, 173);
+}
+
+ul.menu-top-header{
+    display: flex;
+    width: 100%;
+}
+
+ul.menu-top-header li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 35px;
+}
+
