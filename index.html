@@ -4,69 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/top-header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <title>teste front-end</title>
 </head>
 <body>
     <header>
-        <section class="top-header">
-            <div class="center">
-                <div class="w-50 left d-flex telefones">
-                    <span class="left"><img src="assets/img/phone.png" alt="phone.png"><p class="fs-11">(51) 9 9920 0350</p></span>
-                    <span class="left"><img src="assets/img/whats.png" alt="whats.png"><p class="fs-11">(51) 9 9920 0350</p></span>
-                    <div class="clear"></div>
-                </div><!-- w-50 -->
-                <div class="right w-50">
-                    <ul class="right menu-top-header d-flex justify-flex-end">
-                        <li ><a href="#lista-de-desejos" class="fs-11">LISTA DE DESEJOS</a></li>
-                        <li><a href="#fale-conosco" class="fs-11">FALE CONOSCO</a></li>
-                        <li ><a href="#trocas-e-devolucoes" class="fs-11 ">TROCAS E DEVOLUÇÕES</a></li>
-                    </ul>
-                </div><!-- w-50 -->
+        <nav role="navigation">
+            <section class="top-header">
+                <div class="center">
+                    <div class="w-50 left telefones">
+                        <div class="left tel-1">
+                            <p class="fs-11"><img  class="left" src="assets/img/phone.png" alt="phone.png">(51) 9 9920 0350</p>
+                            <div class="clear"></div>
+                        </div>
+                        
+                       <div class="left tel-2">
+                            <p class="fs-11"><img class="left" src="assets/img/whats.png" alt="whats.png">(51) 9 9920 0350</p>
+                            <div class="clear"></div>
+                       </div>
+                       <div class="clear"></div>
+                    </div><!-- w-50 -->
+                    <div class="left w-50">
+                        <ul class="right menu-top-header justify-flex-end">
+                            <li ><a href="#lista-de-desejos" class="fs-11">LISTA DE DESEJOS</a></li>
+                            <li><a href="#fale-conosco" class="fs-11">FALE CONOSCO</a></li>
+                            <li ><a href="#trocas-e-devolucoes" class="fs-11 ">TROCAS E DEVOLUÇÕES</a></li>
+                        </ul>
+                    </div><!-- w-50 -->
+
+                    <div class="wrapper-telefones">
+                        <span class="material-icons help">
+                            help_outline
+                        </span>
+                        <div class="w-100 left telefones-mobile">
+                            <div class="left tel-1">
+                                <p class="fs-11"><img  class="left" src="assets/img/phone.png" alt="phone.png">(51) 9 9920 0350</p>
+                                <div class="clear"></div>
+                            </div>
+                            
+                           <div class="left tel-2">
+                                <p class="fs-11"><img class="left" src="assets/img/whats.png" alt="whats.png">(51) 9 9920 0350</p>
+                                <div class="clear"></div>
+                           </div>
+                           <div class="clear"></div>
+                        </div><!-- w-50 -->
+                        <div class="clear"></div>
+                    </div>
+                    
     
-            </div><!-- center -->
-        </section><!-- top-header -->
+                </div><!-- center -->
+            </section><!-- top-header -->
+    
+            <section class="center main-header">
 
-        <section class="center main-header ">
-            <div class="w-20 left">
-                <a href="" class="logo left"><img src="assets/img/logo.png"></a><!-- Logo -->
-            </div>
+                <div class="header-mobile flex-3">
+                    <a href="" class="logo left"><img src="assets/img/logo.png"></a><!-- Logo -->
+                    <div class="wrapper-mobile d-flex align-center">
+                        <div class="dropdown dropdown-mobile">
+                            <div class="entrarMenu">
+                                <p class="mid entrar">Entrar <span><img src="assets/img/chevron-down.png" class="w-100"></span></p>
+                            </div>
+            
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Minha conta</a></li>
+                                <li><a href="#">Meus pedidos</a></li>
+                                <li><a href="#">Lista de desejos</a></li>
+                            </ul>
+            
+                        </div>
+                        <div class="basket-container basket-mobile">
+                            <img  class="right" src="assets/img/Path 1.png">
+                            <div class="clear"></div>
+                            <span class='basket-circle badge badge-warning' id='lblCartCount'> +30 </span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
 
-            <div class="w-50 left search-container">
-                <input type="search" id="search" placeholder="O que você está procurando?">
-                <button type="submit" id="btn-search" >
-                    <img src="assets/img/search.png" alt="search icon">
-                </button>
-            </div><!-- search-containar-->
-            <div class="w-10 left"></div>
-            <div class="w-10 left"></div>
-            <div class="w-10 left dropdown">
-                <span class="right header-span"><p class="mid entrar">Entrar</p>
-                <img src="assets/img/chevron-down.png"></span>
+                </div>
 
-                <ul id="dropdown-menu">
-                    <li><a href="#">Minha conta</a></li>
-                    <li><a href="#">Meus pedidos</a></li>
-                    <li><a href="#">Lista de desejos</a></li>
-                </ul>
-
-            </div>
-            <div class="w-10 left basket-container">
-                <a href="#">
+                
+                <div class="search-container flex-6">
+                    <input type="search" id="search" placeholder="O que você está procurando?">
+                    <button type="submit" id="btn-search" >
+                        <img src="assets/img/search.png" alt="search icon">
+                    </button>
+                </div><!-- search-containar-->
+                <div class="flex-1"></div>
+                <div class="dropdown">
+                    <p class="mid entrar">Entrar <span><img src="assets/img/chevron-down.png" class="w-100"></span></p>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Minha conta</a></li>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Lista de desejos</a></li>
+                    <ul>
+                </div>
+                <div class="basket-container">
                     <img  class="right" src="assets/img/Path 1.png">
                     <div class="clear"></div>
-                    <div class="basket-circle"><p>+50</p></div>
-                    
-                    
-                </a>
-            </div>
-            <div class="clear"></div>
-        </section>
+                    <span class="basket-circle"> +30 </span>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </nav>
+
     </header>
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/dropdown.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/telefones-mobile.js"></script>
 </body>
 </html>
